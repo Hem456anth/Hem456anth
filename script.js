@@ -1,3 +1,5 @@
+const CURRENT_YEAR = 2026;
+
 const cityScenarios = {
   Hyderabad: {
     homePrice: 9000000,
@@ -38,6 +40,7 @@ const citySelect = document.getElementById('city');
 const breakEvenText = document.getElementById('breakEvenText');
 const summaryList = document.getElementById('summaryList');
 const calculateBtn = document.getElementById('calculateBtn');
+const previewBody = document.getElementById('previewBody');
 
 const fieldIds = [
   'homePrice',
@@ -57,6 +60,10 @@ function formatINR(value) {
     currency: 'INR',
     maximumFractionDigits: 0,
   }).format(value);
+}
+
+function formatPct(value) {
+  return `${value.toFixed(1)}%`;
 }
 
 function yearlyEmi(principal, annualRate, tenureYears) {
@@ -107,6 +114,7 @@ function calculateBreakEven(inputs) {
 
   let breakEvenYear = null;
   const yearsToProject = 30;
+  const preview = [];
 
   for (let year = 1; year <= yearsToProject; year += 1) {
     const emiThisYear = year <= loanTenureYears ? annualEmi : 0;
@@ -117,6 +125,15 @@ function calculateBreakEven(inputs) {
 
     if (breakEvenYear === null && cumBuy <= cumRent) {
       breakEvenYear = year;
+    }
+
+    if (year <= 10) {
+      preview.push({
+        year,
+        salary,
+        buyBurden: (buyCost / salary) * 100,
+        rentBurden: (rentYearly / salary) * 100,
+      });
     }
 
     salary *= 1 + salaryGrowth / 100;
@@ -130,25 +147,44 @@ function calculateBreakEven(inputs) {
     breakEvenYear,
     cumBuy,
     cumRent,
+    preview,
   };
+}
+
+function renderPreview(preview) {
+  previewBody.innerHTML = '';
+  preview.forEach((row) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${row.year}</td>
+      <td>${formatINR(row.salary)}</td>
+      <td>${formatPct(row.buyBurden)}</td>
+      <td>${formatPct(row.rentBurden)}</td>
+    `;
+    previewBody.appendChild(tr);
+  });
 }
 
 function renderResult(inputs, result) {
   summaryList.innerHTML = '';
 
   const city = citySelect.value;
-  const { downPayment, annualEmi, annualMaintenance, breakEvenYear, cumBuy, cumRent } = result;
+  const { downPayment, annualEmi, annualMaintenance, breakEvenYear, cumBuy, cumRent, preview } =
+    result;
 
   if (breakEvenYear) {
-    breakEvenText.textContent = `In ${city}, buying breaks even in about year ${breakEvenYear}. If you plan to stay longer than ${breakEvenYear} years, buying starts looking financially better.`;
+    const calendarYear = CURRENT_YEAR + breakEvenYear;
+    breakEvenText.textContent = `For ${city}, buying breaks even in about ${breakEvenYear} years (around ${calendarYear}). If you'll stay beyond that, buying is likely cheaper with these assumptions.`;
   } else {
-    breakEvenText.textContent = `In ${city}, renting stays cheaper for the next 30 years with these assumptions. Buying may still make sense for lifestyle reasons.`;
+    breakEvenText.textContent = `For ${city}, renting remains cheaper through 2056 (30-year horizon) under these assumptions.`;
   }
 
+  const finalPreview = preview[preview.length - 1];
   const items = [
     `Estimated down payment: ${formatINR(downPayment)}`,
-    `Yearly EMI outflow: ${formatINR(annualEmi)} (for ${inputs.loanTenureYears} years)`,
+    `Yearly EMI outflow: ${formatINR(annualEmi)} for ${inputs.loanTenureYears} years`,
     `Yearly maintenance: ${formatINR(annualMaintenance)}`,
+    `Year 10 affordability: buy ${formatPct(finalPreview.buyBurden)} of salary vs rent ${formatPct(finalPreview.rentBurden)} of salary`,
     `30-year buy outflow: ${formatINR(cumBuy)}`,
     `30-year rent outflow: ${formatINR(cumRent)}`,
   ];
@@ -158,6 +194,8 @@ function renderResult(inputs, result) {
     li.textContent = item;
     summaryList.appendChild(li);
   });
+
+  renderPreview(preview);
 }
 
 Object.keys(cityScenarios).forEach((cityName) => {
@@ -169,6 +207,7 @@ Object.keys(cityScenarios).forEach((cityName) => {
 
 citySelect.addEventListener('change', () => {
   fillFields(cityScenarios[citySelect.value]);
+  renderResult(readInputs(), calculateBreakEven(readInputs()));
 });
 
 calculateBtn.addEventListener('click', () => {
@@ -179,3 +218,4 @@ calculateBtn.addEventListener('click', () => {
 
 citySelect.value = 'Hyderabad';
 fillFields(cityScenarios.Hyderabad);
+renderResult(readInputs(), calculateBreakEven(readInputs()));

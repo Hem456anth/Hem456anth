@@ -9,17 +9,17 @@
   <body>
     <main class="container">
       <header>
-        <h1>Should I Buy or Rent?</h1>
+        <h1>Buy vs Rent Calculator (India)</h1>
         <p>
-          Mobile-friendly buy-vs-rent calculator with Gen Z-focused assumptions for Indian
-          cities.
+          Mobile-friendly calculator for Gen Z professionals comparing buying vs renting in
+          Hyderabad, Bengaluru, and Visakhapatnam.
         </p>
       </header>
 
       <section class="card">
         <label for="city">City preset</label>
         <select id="city"></select>
-        <p class="hint">Presets: Hyderabad, Bengaluru, Visakhapatnam</p>
+        <p class="hint">Uses starter assumptions for home price, rent, and income growth.</p>
       </section>
 
       <section class="card grid">
@@ -59,6 +59,24 @@
         <h2>Result</h2>
         <p id="breakEvenText">Choose a city and calculate to see your break-even year.</p>
         <ul id="summaryList"></ul>
+      </section>
+
+      <section class="card" id="previewCard">
+        <h2>10-year preview</h2>
+        <p class="hint">Snapshot of yearly housing burden as a share of salary.</p>
+        <div class="tableWrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Salary</th>
+                <th>Buy burden</th>
+                <th>Rent burden</th>
+              </tr>
+            </thead>
+            <tbody id="previewBody"></tbody>
+          </table>
+        </div>
       </section>
     </main>
 

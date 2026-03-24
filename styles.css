@@ -1,9 +1,7 @@
 :root {
-  --bg: #0b1020;
   --card: #151c33;
   --text: #f3f6ff;
   --muted: #b5bfd6;
-  --accent: #59c3ff;
 }
 
 * {
@@ -18,14 +16,14 @@ body {
 }
 
 .container {
-  max-width: 760px;
+  max-width: 780px;
   margin: 0 auto;
   padding: 1rem;
 }
 
 header h1 {
   margin-bottom: 0.25rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 header p {
@@ -81,6 +79,23 @@ button {
   margin: 0.75rem 0 0;
   padding-left: 1.25rem;
   color: var(--muted);
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.45rem;
+  border-bottom: 1px solid #2c3a61;
 }
 
 @media (min-width: 700px) {
