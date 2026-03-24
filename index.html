@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy vs Rent (India) Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Buy vs Rent Calculator (India)</h1>
+        <p>
+          Mobile-friendly calculator for Gen Z professionals comparing buying vs renting in
+          Hyderabad, Bengaluru, and Visakhapatnam.
+        </p>
+      </header>
+
+      <section class="card">
+        <label for="city">City preset</label>
+        <select id="city"></select>
+        <p class="hint">Uses starter assumptions for home price, rent, and income growth.</p>
+      </section>
+
+      <section class="card grid">
+        <label for="homePrice">Home price (₹)</label>
+        <input id="homePrice" type="number" min="1000000" step="100000" />
+
+        <label for="monthlyRent">Current monthly rent (₹)</label>
+        <input id="monthlyRent" type="number" min="5000" step="500" />
+
+        <label for="downPaymentPct">Down payment (%)</label>
+        <input id="downPaymentPct" type="number" min="5" max="90" step="1" />
+
+        <label for="emiRate">Home loan interest / EMI rate (% p.a.)</label>
+        <input id="emiRate" type="number" min="5" max="15" step="0.1" />
+
+        <label for="loanTenureYears">Loan tenure (years)</label>
+        <input id="loanTenureYears" type="number" min="5" max="35" step="1" />
+
+        <label for="rentInflation">Rent inflation (% p.a.)</label>
+        <input id="rentInflation" type="number" min="1" max="15" step="0.1" />
+
+        <label for="maintenancePct">Maintenance + society (% of home price p.a.)</label>
+        <input id="maintenancePct" type="number" min="0.5" max="5" step="0.1" />
+
+        <label for="salaryGrowth">Salary growth (% p.a.)</label>
+        <input id="salaryGrowth" type="number" min="2" max="25" step="0.5" />
+
+        <label for="startingSalary">Starting annual salary (₹)</label>
+        <input id="startingSalary" type="number" min="300000" step="50000" />
+      </section>
+
+      <section class="card actions">
+        <button id="calculateBtn">Calculate break-even</button>
+      </section>
+
+      <section class="card" id="resultCard">
+        <h2>Result</h2>
+        <p id="breakEvenText">Choose a city and calculate to see your break-even year.</p>
+        <ul id="summaryList"></ul>
+      </section>
+
+      <section class="card" id="previewCard">
+        <h2>10-year preview</h2>
+        <p class="hint">Snapshot of yearly housing burden as a share of salary.</p>
+        <div class="tableWrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Salary</th>
+                <th>Buy burden</th>
+                <th>Rent burden</th>
+              </tr>
+            </thead>
+            <tbody id="previewBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
