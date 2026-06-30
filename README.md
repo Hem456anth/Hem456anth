@@ -8,7 +8,7 @@
 
 ## 🚀 About Me
 
-I'm **Hemanth Kundrapu**, a **Solo Entrepreneur** and **Polymath** building intelligent systems that automate the boring stuff and unlock real leverage. I design AI agents, craft prompts, and wire up automations that turn ideas into working products — fast.
+I'm **Hemanth Kundrapu**,building intelligent systems that automate the boring stuff and unlock real leverage. I design AI agents, craft prompts, and wire up automations that turn ideas into working products — fast.
 
 When I'm not shipping, I'm creating content and sharing what I learn with the world on **YouTube** and **Instagram**.
 
