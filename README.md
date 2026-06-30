@@ -14,7 +14,7 @@ When I'm not shipping, I'm creating content and sharing what I learn with the wo
 
 <ul>
   <li>🤖 I build <b>AI agents &amp; automations</b> with n8n, Make, and CrewAI</li>
-  <li>🧠 I'm obsessed with <b>prompt engineering</b> and getting the most out of LLMs</li>
+  <li>🧠 I'm obsessed with <b>reverse engineering</b> and getting the most out of Algorithms</li>
   <li>🎥 I share my creator journey on <b>YouTube</b> &amp; <b>Instagram</b></li>
   <li>⚡ I believe in <b>vibe coding</b> — moving fast, building lean, learning in public</li>
 </ul>
