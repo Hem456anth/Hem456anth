@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hemanth%20Kundrapu&fontSize=50&fontColor=ffffff&animation=fadeIn&desc=Solo%20Entrepreneur%20%7C%20Polymath&descSize=20&descAlignY=58" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hemanth%20Kundrapu&fontSize=50&fontColor=ffffff&animation=fadeIn&desc=%20%7C%20Polymath&descSize=20&descAlignY=58" width="100%" />
   <br />
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Solo+Entrepreneur+%7C+Polymath;Building+AI+Agents+%26+Automations;Prompt+Engineering+%7C+AI+Workflows;Turning+Ideas+Into+Intelligent+Systems" alt="Typing SVG" />
   <br /><br />
@@ -14,7 +14,7 @@ When I'm not shipping, I'm creating content and sharing what I learn with the wo
 
 <ul>
   <li>🤖 I build <b>AI agents &amp; automations</b> with n8n, Make, and CrewAI</li>
-  <li>🧠 I'm obsessed with <b>reverse engineering</b> and getting the most out of Algorithms</li>
+  <li>🧠 I'm obsessed with <b>Reverse engineering</b> and getting the most out of Algorithms</li>
   <li>🎥 I share my creator journey on <b>YouTube</b> &amp; <b>Instagram</b></li>
   <li>⚡ I believe in <b>vibe coding</b> — moving fast, building lean, learning in public</li>
 </ul>
