@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hemanth%20Kundrapu&fontSize=50&fontColor=ffffff&animation=fadeIn&desc=Polymath&descSize=20&descAlignY=58" width="100%" />
-  <br />
+  <br />h
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Polymath;Building+AI+Agents+%26+Automations;Prompt+Engineering+%7C+AI+Workflows;Turning+Ideas+Into+Intelligent+Systems" alt="Typing SVG" />
   <br /><br />
   <img src="https://komarev.com/ghpvc/?username=Hem456anth&label=Profile%20Views&color=7C3AED&style=for-the-badge" alt="Profile Views" />
