@@ -1,9 +1,7 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hemanth%20Kundrapu&fontSize=50&fontColor=ffffff&animation=fadeIn&desc=AI%20%26%20Automation%20Builder&descSize=20&descAlignY=68" width="100%" alt="Hemanth Kundrapu profile banner" />
+  <img src="assets/banner.png" width="100%" alt="Hemanth Kundrapu - AI &amp; Automation Builder" />
   <br />
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=700&lines=Building+AI+Agents+%26+Automations;Prompt+Engineering+%7C+AI+Workflows;Turning+Ideas+Into+Intelligent+Systems" alt="Typing SVG" />
-  <br /><br />
-  <img src="https://komarev.com/ghpvc/?username=Hem456anth&label=Profile%20Views&color=7C3AED&style=for-the-badge" alt="Profile Views" />
 </div>
 
 ## 🚀 About Me
@@ -85,20 +83,6 @@ When I'm not shipping, I'm creating content and sharing what I learn on **YouTub
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hem456anth&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
 </div>
 
-## 📈 Contribution Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Hem456anth&theme=tokyo-night&hide_border=true" alt="GitHub contribution activity graph" />
-</div>
-
-## 🗂️ Profile Summary
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Hem456anth&theme=tokyonight" alt="GitHub profile summary card" />
-</div>
-
-<!-- Trophies section removed: the public github-profile-trophy service is down (deployment disabled). Re-add when a working instance exists. -->
-
 ## 🌐 Connect With Me
 
 <div align="center">
@@ -108,6 +92,5 @@ When I'm not shipping, I'm creating content and sharing what I learn on **YouTub
   <a href="https://www.linkedin.com/in/kundrapu-hemanth-a68066353" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <br /><br />
   <i>"Build relentlessly. Automate everything. Stay curious."</i>
-  <br /><br />
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" alt="Waving gradient footer" />
+
 </div>
