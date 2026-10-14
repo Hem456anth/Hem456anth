@@ -97,11 +97,7 @@ When I'm not shipping, I'm creating content and sharing what I learn on **YouTub
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Hem456anth&theme=tokyonight" alt="GitHub profile summary card" />
 </div>
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Hem456anth&theme=onedark&no-frame=true&no-bg=true&margin-w=4&row=1" alt="GitHub Trophies" />
-</div>
+<!-- Trophies section removed: the public github-profile-trophy service is down (deployment disabled). Re-add when a working instance exists. -->
 
 ## 🌐 Connect With Me
 
